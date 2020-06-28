@@ -12,6 +12,9 @@ jobs:
     runs-on: "ubuntu-latest"
 
     steps:
+    - name: Get Timestamp
+      id: date
+      run: echo "::set-output name=date::$(date +'$%d-%m-%Y %H:%M:%S')"
     - name: Checkout
       uses: actions/checkout@v2
       with:
@@ -21,7 +24,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ github.ref }}
+        tag_name: ${{ github.ref }} ${{ steps.date.outputs.date }}
         release_name: Release ${{ github.ref }}
         draft: false
         prerelease: false
