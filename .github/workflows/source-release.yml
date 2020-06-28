@@ -27,4 +27,4 @@ jobs:
         tag_name: tags/v1+${{ steps.date.outputs.timestamp }}
         release_name: Release
         draft: false
-        prerelease: false
+        prerelease: true
