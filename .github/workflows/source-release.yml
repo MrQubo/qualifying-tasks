@@ -24,7 +24,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ github.ref }}/${{ steps.date.outputs.timestamp }}
+        tag_name: tags/v1+${{ steps.date.outputs.timestamp }}
         release_name: Release
         draft: false
         prerelease: false
