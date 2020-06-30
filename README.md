@@ -34,16 +34,10 @@ source venv/bin/activate
 [https://docs.python.org/3/library/venv.html#creating-virtual-environments](https://docs.python.org/3/library/venv.html#creating-virtual-environments)
 
 
-## Aktualizacja pip
-
-```sh
-pip install --upgrade pip
-```
-
-
 ## Instalacja zależności z pip
 
 ```sh
+pip install --upgrade pip
 pip install --upgrade -r requirements.txt
 ```
 
@@ -90,6 +84,19 @@ conda activate <tu-wpisz-wybraną-nazwę>
 ```sh
 conda install --file requirements.txt
 ```
+
+
+## Uruchomienie jupytera
+
+```sh
+jupyter lab
+```
+
+Automagicznie powinna otworzyć się przeglądarka internetowa.
+Jeśli nie, to trzeba otworzyć, w przeglądarce, jeden z linków wyświetlonych w konsoli przez jupytera.
+
+W jupyter'rze należy zacząć od otworzenia notatnika `index.ipynb` z przeglądarki plików po lewej stronie.
+Znajdują się tam dalsze instrukcje.
 
 
 
