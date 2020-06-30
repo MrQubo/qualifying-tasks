@@ -1,4 +1,4 @@
-# Instalacja i uruchomienie jupytera
+# Instalacja – virtualenv (zalecane na Linuksie)
 
 ## Wymagania
 
@@ -13,7 +13,7 @@ Pythona i virtualenva należy zainstalować z systemowego package managera. Np.:
 sudo apt install python3 python3-virtualenv
 ```
 
-Jeżeli virtualenva **nie ma** w systemowym package managerze, można go też zainstalować z pip-a:
+Jeżeli virtualenva **nie ma** w systemowym package managerze, można go też zainstalować z pip-a (należy wtedy samemu pamiętać o aktualizacji virtualenva):
 ```sh
 sudo pip3 install --upgrade pip
 sudo pip3 install --upgrade virtualenv
@@ -25,13 +25,13 @@ sudo pip3 install --upgrade virtualenv
 ### Linux (bash lub zsh)
 
 ```sh
-python3 -m venv venv --prompt jupyter-qiskit
+python3 -m venv venv --prompt <tu-wpisz-wybraną-nazwę>
 source venv/bin/activate
 ```
 
-### Inne powłoki i platformy (w tym Windows)
+### Inne powłoki i platformy
 
-[https://docs.python.org/3/library/venv.html#creating-virtual-environments](https://docs.python.org/3/library/venv.html#creating-virtual-environments).
+[https://docs.python.org/3/library/venv.html#creating-virtual-environments](https://docs.python.org/3/library/venv.html#creating-virtual-environments)
 
 
 ## Aktualizacja pip
@@ -41,7 +41,7 @@ pip install --upgrade pip
 ```
 
 
-## Instalowanie zależności z pip
+## Instalacja zależności z pip
 
 ```sh
 pip install --upgrade -r requirements.txt
@@ -59,6 +59,38 @@ Jeśli nie, to trzeba otworzyć, w przeglądarce, jeden z linków wyświetlonych
 
 W jupyter'rze należy zacząć od otworzenia notatnika `index.ipynb` z przeglądarki plików po lewej stronie.
 Znajdują się tam dalsze instrukcje.
+
+
+
+# Instalacja – anaconda (zalecane na Windowsie)
+
+## Wymagania
+
+- anaconda
+- przeglądarka internetowa (Firefox, Chrome, Safari)
+
+### Instalacja anacondy
+
+Pobieramy i instalujemy anacondę zgodnie z instrukcjami: [https://docs.anaconda.com/anaconda/install/](https://docs.anaconda.com/anaconda/install/).
+
+
+## Tworzenie i aktywowanie środowiska condy
+
+Na Windowsie otwieramy program „Anaconda Prompt”, na innych systemach – terminal. Następnie wykonujemy poniższe komendy:
+
+```sh
+conda update conda
+conda create --name <tu-wpisz-wybraną-nazwę> python=3
+conda activate <tu-wpisz-wybraną-nazwę>
+```
+
+
+## Instalacja zależności
+
+```sh
+conda install --file requirements.txt
+```
+
 
 
 # Kontakt
