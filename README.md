@@ -22,6 +22,8 @@ sudo pip3 install --upgrade virtualenv
 
 ## Tworzenie i aktywowanie virtualenva
 
+W katalogu z repozytorium uruchamiamy:
+
 ### Linux (bash lub zsh)
 
 ```sh
@@ -35,7 +37,7 @@ Zamiast `qiskit` można wpisać dowolną wybraną nazwę.
 [https://docs.python.org/3/library/venv.html#creating-virtual-environments](https://docs.python.org/3/library/venv.html#creating-virtual-environments)
 
 
-## Instalacja zależności z pip
+## Instalacja zależności
 
 ```sh
 pip install --upgrade pip
@@ -83,8 +85,11 @@ Zamiast `qiskit` można wpisać dowolną wybraną nazwę.
 
 ## Instalacja zależności
 
+W katalogu z repozytorium uruchamiamy:
+
 ```sh
-conda install --file requirements.txt
+pip install --upgrade pip
+pip install --upgrade -r requirements.txt
 ```
 
 
