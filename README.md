@@ -25,9 +25,10 @@ sudo pip3 install --upgrade virtualenv
 ### Linux (bash lub zsh)
 
 ```sh
-python3 -m venv venv --prompt <tu-wpisz-wybraną-nazwę>
+python3 -m venv venv --prompt qiskit
 source venv/bin/activate
 ```
+Zamiast `qiskit` można wpisać dowolną wybraną nazwę.
 
 ### Inne powłoki i platformy
 
@@ -74,9 +75,10 @@ Na Windowsie otwieramy program „Anaconda Prompt”, na innych systemach – te
 
 ```sh
 conda update conda
-conda create --name <tu-wpisz-wybraną-nazwę> python=3
-conda activate <tu-wpisz-wybraną-nazwę>
+conda create --name qiskit python=3
+conda activate qiskit
 ```
+Zamiast `qiskit` można wpisać dowolną wybraną nazwę.
 
 
 ## Instalacja zależności
