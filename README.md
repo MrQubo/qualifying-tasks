@@ -65,7 +65,7 @@ Znajdują się tam dalsze instrukcje.
 
 ### Instalacja anacondy
 
-Pobieramy i instalujemy anacondę zgodnie z instrukcjami: [https://docs.anaconda.com/anaconda/install/](https://docs.anaconda.com/anaconda/install/).
+Pobieramy i instalujemy anacondę (Python 3.7) zgodnie z instrukcjami: [https://docs.anaconda.com/anaconda/install/](https://docs.anaconda.com/anaconda/install/).
 
 
 ## Tworzenie i aktywowanie środowiska condy
