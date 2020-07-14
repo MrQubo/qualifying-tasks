@@ -88,7 +88,6 @@ Zamiast `qiskit` można wpisać dowolną wybraną nazwę.
 W katalogu z repozytorium uruchamiamy:
 
 ```sh
-pip install --upgrade pip
 conda install -c conda-forge --file requirements-conda-forge.txt
 pip install --upgrade -r requirements-conda-pip.txt
 ```
